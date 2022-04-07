@@ -1,15 +1,13 @@
 [[source]]
+url = "https://pypi.org/simple"
 verify_ssl = true
-name = "awaken-email-service"
-url = "https://pypi.python.org/simple"
+name = "pypi"
 
 [packages]
-django = "4.0"
-django-debug-toolbar = "*"
-django-environ = "*"
+flask = "*"
+python-dotenv = "*"
 
 [dev-packages]
-autopep8 = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
