@@ -6,8 +6,11 @@ name = "pypi"
 [packages]
 flask = "*"
 python-dotenv = "*"
+flask-expects-json = "*"
+asyncio = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.8"
