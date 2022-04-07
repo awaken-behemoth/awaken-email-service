@@ -1,5 +1,5 @@
 """
-WSGI config for awaken_media_service project.
+WSGI config for awaken_email_service project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'awaken_media_service.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'awaken_email_service.settings')
 
 application = get_wsgi_application()
