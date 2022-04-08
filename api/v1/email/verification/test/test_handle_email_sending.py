@@ -6,13 +6,12 @@ from flask import Flask
 from v1 import get_api_version_1
 
 
-def test_request_example(client):
+def test_should_send_email(client):
 
     data = json.dumps({
-        "template": "password_reset",
+        "data": {"validation-url": "https://google.com"},
         "lang": "password_reset",
-        "authority": "no-reply",
-        "recipients": ["komlankodoh@gmail.com"]
+        "recipient": "komlankodoh@gmail.com"
     })
 
     response = client.post("/", data=data,

@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ehlo",
-        "jsonify"
+        "jsonify",
+        "werkzeug"
     ]
 }

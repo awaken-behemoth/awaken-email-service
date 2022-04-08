@@ -2,17 +2,21 @@
 
 import pytest
 from flask import Flask
-from v1 import get_api_version_1
+
+from utils import load_env
+from ..blueprint import blueprint
 
 @pytest.fixture()
 def app():
-    blueprint = get_api_version_1("api_version_1_test")
+    
     app = Flask(__name__)
 
     # default api endpoint
-    app.register_blueprint(blueprint, url_prefix="")
+    app.register_blueprint(blueprint, url_prefix="/")
 
     # other setup can go here
+    with app.app_context():
+        load_env()
 
     yield app
 
