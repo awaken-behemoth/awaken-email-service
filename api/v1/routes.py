@@ -1,22 +1,24 @@
 
 
-from flask import Blueprint, request, jsonify
+from v1 import email_service
+from flask import Blueprint, request
+from v1.email_service import send_email
 from flask_expects_json import expects_json
 
 
+
 def get_api_version_1(name):
-    
     api = Blueprint(name, name)
 
     email_sending_schema = {
         "type": "object",
         "properties": {
-            "template": {type: "string"},
-            "subject": {"type": "string"},
-            "sending_authority": {"type": "string"},
+            "lang": {"type": "string"},
+            "template": {"type": "string"},
+            "authority": {"type": "string"},
             "recipients": {"type": "array", "minItems": 1},
         },
-        "required": ["template", "subject", "sending_authority", "recipients"]
+        "required": ["template", "lang", "authority", "recipients"]
     }
 
     @api.post("/")
@@ -25,8 +27,13 @@ def get_api_version_1(name):
 
         email_details = request.json
 
-        print(email_details)
+        email = email_service.Email( email_details["template"], email_details["lang"])
+        
+        recipients = email_details["recipients"];
+        authority = email_details["authority"];
+        
+        email_service.send_email(recipients, email, authority);
+        
+        return "";
 
-        return email_details
-    
-    return api;
+    return api

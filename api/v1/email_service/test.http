@@ -1,0 +1,10 @@
+
+POST http://127.0.0.1:5000/api/v1 
+Content-Type: application/json;
+
+{
+    "template": "password_reset",
+    "lang": "password_reset",
+    "authority": "no-reply",
+    "recipients": ["komlankodoh@gmail.com"]
+}
