@@ -7,7 +7,9 @@ name = "pypi"
 flask = "*"
 python-dotenv = "*"
 flask-expects-json = "*"
-asyncio = "*"
+
+uwsgi = "*"
+wheel = "*"
 
 [dev-packages]
 pytest = "*"

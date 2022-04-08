@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d27d564b0ba01de595f2b37081fbb2dc9e7de55732bce1db01026f40b7448e46"
+            "sha256": "cb6ba2e3e0c7c8cc34ba8979062c7d03d0292c431c32dac4bf2b15f9109a5ce7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -178,6 +178,13 @@
             "index": "pypi",
             "version": "==0.20.0"
         },
+        "uwsgi": {
+            "hashes": [
+                "sha256:88ab9867d8973d8ae84719cf233b7dafc54326fcaec89683c3f9f77c002cdff9"
+            ],
+            "index": "pypi",
+            "version": "==2.0.20"
+        },
         "werkzeug": {
             "hashes": [
                 "sha256:3c5493ece8268fecdcdc9c0b112211acd006354723b280d643ec732b6d4063d6",
@@ -185,6 +192,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.1"
+        },
+        "wheel": {
+            "hashes": [
+                "sha256:4bdcd7d840138086126cd09254dc6195fb4fc6f01c050a1d7236f2630db1d22a",
+                "sha256:e9a504e793efbca1b8e0e9cb979a249cf4a0a7b5b8c9e8b65a5e39d49529c1c4"
+            ],
+            "index": "pypi",
+            "version": "==0.37.1"
         },
         "zipp": {
             "hashes": [

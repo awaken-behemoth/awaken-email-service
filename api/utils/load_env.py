@@ -5,6 +5,8 @@ import os
 from flask import current_app
 from dotenv import load_dotenv
 
+load_dotenv()
+
 
 def load_env():
     

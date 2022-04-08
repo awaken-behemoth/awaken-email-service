@@ -11,9 +11,6 @@ app.register_blueprint(get_api_version_1("api_default_version"), url_prefix="/ap
 
 app.register_blueprint(get_api_version_1("api_version_1"), url_prefix= "/api/v1")
 
-@app.get("/")
-def dummy():
-    return "Hello world"
 
 with app.app_context():
     load_env()
