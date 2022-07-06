@@ -1,2 +1,2 @@
 
-from .routes import get_api_version_1;
+from .routes import get_api_version_1

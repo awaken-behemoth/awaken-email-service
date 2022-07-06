@@ -29,11 +29,13 @@ def test_should_return_unauthorized_when_token_is_not_provided(test_client):
     assert response.status_code == 401
 
 
-def test_should_return_unauthorized_when_using_wrong_authorization_specification(test_client):
+def test_should_return_unauthorized_when_using_wrong_authorization_specification(
+        test_client):
     response = test_client.post(
         "/", headers={"Authorization": "Basic email_password"})
 
     assert response.status_code == 401
+
 
 def test_should_return_401_if_the_token_if_misformated(test_client):
     response = response = test_client.post(
@@ -41,8 +43,9 @@ def test_should_return_401_if_the_token_if_misformated(test_client):
 
     assert response.status_code == 401
 
+
 def test_should_return_ok_when_using_corrent_token(test_client):
     response = test_client.post(
-        "/", headers={"Authorization": "Bearer "+  TEST_TOKEN})
-    
+        "/", headers={"Authorization": "Bearer " + TEST_TOKEN})
+
     assert response.status_code == 200

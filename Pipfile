@@ -7,12 +7,13 @@ name = "pypi"
 flask = "*"
 python-dotenv = "*"
 flask-expects-json = "*"
-
 uwsgi = "*"
 wheel = "*"
+pylint = "*"
 
 [dev-packages]
 pytest = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"

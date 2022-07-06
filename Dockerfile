@@ -18,4 +18,6 @@ COPY deploy.sh /
 RUN pip install pipenv
 RUN pipenv install --system --deploy --ignore-pipfile
 
+EXPOSE 5000
+
 ENTRYPOINT ["./deploy.sh"]

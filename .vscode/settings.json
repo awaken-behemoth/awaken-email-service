@@ -2,6 +2,7 @@
     "cSpell.words": [
         "ehlo",
         "jsonify",
+        "middlewares",
         "werkzeug"
     ]
 }

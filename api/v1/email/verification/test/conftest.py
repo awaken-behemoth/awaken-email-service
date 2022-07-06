@@ -6,9 +6,10 @@ from flask import Flask
 from utils import load_env
 from ..blueprint import blueprint
 
+
 @pytest.fixture()
 def app():
-    
+
     app = Flask(__name__)
 
     # default api endpoint
