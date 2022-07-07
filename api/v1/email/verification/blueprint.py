@@ -1,6 +1,6 @@
 
 
-from v1 import email
+from api.v1 import email
 from .Email import data_schema, Email
 from flask import Blueprint, request
 from flask_expects_json import expects_json

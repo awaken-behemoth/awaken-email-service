@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" && cd ..
 
-uwsgi app.ini
+pipenv install

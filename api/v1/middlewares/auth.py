@@ -1,7 +1,7 @@
 
 from flask import Blueprint, Flask, current_app, request
 
-from v1.errors import Unauthorized
+from api.v1.errors import Unauthorized
 
 
 def assert_authorization_header_is_valid(authorization_header: str):

@@ -1,5 +1,5 @@
 
-from v1.email.Email import Email
+from api.v1.email.Email import Email
 from email.mime.text import MIMEText
 
 data_schema = {
