@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-from api.v1 import middlewares, errors, email
+from v1 import middlewares, errors, email
 
 
 def get_api_version_1(name):

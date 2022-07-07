@@ -1,7 +1,6 @@
 
 
 import smtplib
-from .Email import Email
 from flask import current_app
 
 
